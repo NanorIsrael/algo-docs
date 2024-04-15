@@ -1,19 +1,20 @@
 .parent {
 	display: flex;
 	flex-direction: row;
-	/* justify-content: space-between; */
+	justify-content: center;
 	background-color: black;
 	color: brown;
 	width: 90%;
 	height: 300px;
 	margin: 0 auto;
 	flex-wrap: wrap;
-	align-content: center;
-
+	align-content: space-around;
+	align-items: stretch;
 }
 .container1 {
 	display: flex;
 	/* height: 100px; */
+	align-items: stretch;
 	border: 2px solid red;
 }
 .container2 {

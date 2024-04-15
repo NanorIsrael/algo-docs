@@ -11,3 +11,16 @@ https://www.youtube.com/watch?v=e1gAyQuIFQo
 
 
 <!-- css -->
+https://cssreference.io
+http://ref.openweb.io/CSS/
+https://htmldog.com/references/css/properties/
+https://css-tricks.com/box-sizing/
+https://www.codecaptain.io/tools/css-specificity-calculator
+https://frontend30.com/css-selectors-cheatsheet/
+
+ <!-- 0x03. Responsive design -->
+
+
+<!-- Accessibility -->
+https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1
+https://www.telerik.com/blogs/web-accessibility-guidebook-for-developers?fbclid=IwAR3v8sqaMyuAYfa14dZJpDKqJd-v8qKfaKeEvZJRKTcRIOabNnYGPo4rA7U
