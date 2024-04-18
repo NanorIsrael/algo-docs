@@ -19,8 +19,15 @@ https://www.codecaptain.io/tools/css-specificity-calculator
 https://frontend30.com/css-selectors-cheatsheet/
 
  <!-- 0x03. Responsive design -->
-
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
 
 <!-- Accessibility -->
 https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1
+
 https://www.telerik.com/blogs/web-accessibility-guidebook-for-developers?fbclid=IwAR3v8sqaMyuAYfa14dZJpDKqJd-v8qKfaKeEvZJRKTcRIOabNnYGPo4rA7U
+
+https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies
+
+https://a11y-style-guide.com/style-guide/
+
+<!-- r -->
