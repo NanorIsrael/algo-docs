@@ -30,4 +30,5 @@ https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies
 
 https://a11y-style-guide.com/style-guide/
 
-<!-- r -->
+<!-- JS -->
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Typed_arrays

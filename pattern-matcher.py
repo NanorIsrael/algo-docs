@@ -39,3 +39,4 @@ text = "ab"
 pattern = ".*"
 result = is_match(text, pattern)
 print(result)  # Output: True
+print("----->", bool("result"))  # Output: True
