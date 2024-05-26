@@ -17,6 +17,7 @@ https://htmldog.com/references/css/properties/
 https://css-tricks.com/box-sizing/
 https://www.codecaptain.io/tools/css-specificity-calculator
 https://frontend30.com/css-selectors-cheatsheet/
+https://web.dev/learn/css
 
  <!-- 0x03. Responsive design -->
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
@@ -32,3 +33,11 @@ https://a11y-style-guide.com/style-guide/
 
 <!-- JS -->
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Typed_arrays
+https://www.w3schools.com/js/js_2017.asp
+
+<!-- ts -->
+https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+
+
+
+<!--  -->

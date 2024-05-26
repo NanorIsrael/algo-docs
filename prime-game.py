@@ -147,7 +147,7 @@ import time
 
 start_time = time.time()
 
-print("Winner: {}".format(isWinner(10000, nums)))
+# print("Winner: {}".format(isWinner(10, nums)))
 
 end_time = time.time()
 
@@ -156,10 +156,24 @@ print("-------")
 
 import random
 
-random_numbers = [random.randint(1, 1000) for _ in range(100000)]
+# random_numbers = [random.randint(1, 1000) for _ in range(100000)]
 
 # board = [i for i in range(10000)]
 # print('{} wins'.format(isWinner(10000, random_numbers)))
-# for i in range(10):
-# 	print('{} is {}'.format(i, sieve_of_eratosthenes(i)))
 
+def isPrime(num):
+    if num < 2:
+        return False
+    if num == 2 or num == 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if  num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+for i in range(20):
+	print('{} is {}'.format(i, isPrime(i)))
