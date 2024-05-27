@@ -175,5 +175,7 @@ def isPrime(num):
         i += 6
     return True
 
+
+
 for i in range(20):
-	print('{} is {}'.format(i, isPrime(i)))
+	print('{} is {}'.format(i, pyPrime(i)))

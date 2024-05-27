@@ -34,10 +34,13 @@ https://a11y-style-guide.com/style-guide/
 <!-- JS -->
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Typed_arrays
 https://www.w3schools.com/js/js_2017.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
 
 <!-- ts -->
 https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
 
 
 
-<!--  -->
+<!-- code challlenges -->
+https://edabit.com/challenges
