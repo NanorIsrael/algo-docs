@@ -73,14 +73,34 @@ function resolveAfter2Seconds() {
 	console.log("== concurrent2 done ==");
   }
   
-  sequentialStart(); // after 2 seconds, logs "slow", then after 1 more second, "fast"
+//   sequentialStart(); // after 2 seconds, logs "slow", then after 1 more second, "fast"
   
   // wait above to finish
-  setTimeout(sequentialWait, 4000); // after 2 seconds, logs "slow" and then "fast"
+//   setTimeout(sequentialWait, 4000); // after 2 seconds, logs "slow" and then "fast"
   
 //   // wait again
-  setTimeout(concurrent1, 7000); // same as sequentialWait
+//   setTimeout(concurrent1, 7000); // same as sequentialWait
   
 //   // wait again
-  setTimeout(concurrent2, 10000); // after 1 second, logs "fast", then after 1 more second, "slow"
+//   setTimeout(concurrent2, 10000); // after 1 second, logs "fast", then after 1 more second, "slow"
   
+function  bubbleSort(myarr=[1,8, 4, 5,2,6,3,7]){
+	isSorted = true
+	// let idx = 0
+	while (isSorted) {
+		isSorted = false
+		let temp = 0
+		for (let idx=0; idx < myarr.length - 1; idx++) {
+			if (myarr[idx] > myarr[idx + 1]) {
+				temp = myarr[idx + 1]
+				myarr[idx + 1] = myarr[idx]
+				myarr[idx] = temp
+				isSorted = true
+			}
+		}
+	}
+	return myarr
+}
+
+const myarr=[1,8, 4, 5,2,6,3,7]
+console.log(myarr.copyWithin(0,2))
