@@ -1,11 +1,13 @@
 # handle server disconnections
 # handle endless redirects
 import asyncio
-from aiohttp import ClientSession, ClientError
 import logging
+import urllib.error
+import urllib.parse
 import re
 import sys
 
+from aiohttp import ClientSession, ClientError
 
 logging.basicConfig(
 	format="%(asctime)s %(levelname)s:%(name)s: %(message)s",
@@ -31,6 +33,15 @@ async def parse(url: str):
 	found = set()
 	try:
 		html = await fetch_html(url)
+		for link in HREF_RE.findall(html):
+			try:
+				abslink = urllib.parse.urljoin(url, link)
+				found.add(abslink)
+			except (urllib.error.URLError, ValueError):
+				logger.exception("Error parsing URL: %s", link)
+				pass
+		logger.info("Found %d links for %s", len(found), url)
+		return found
 	except (
 		  aiohttp.ClientError,
 		  aiohttp.http_exceptions.HttpProcessingError,
@@ -44,12 +55,9 @@ async def parse(url: str):
 		return found
 	except Exception as e:
 			logger.error(
-            	"Non-aiohttp exception occured:  %s", getattr(e, "__dict__", {})
+				"Non-aiohttp exception occured:  %s", getattr(e, "__dict__", {})
 			)
 			return found
-	else:
-		for link in HREF_RE.findall(html):
-			print("link", link)
 
 
 if __name__ == '__main__':
