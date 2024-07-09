@@ -183,3 +183,8 @@ def isPrime(num):
 
 # for i in range(40):
 # 	print('{} is {}'.format(i, isPrime(i)))
+import random
+
+
+seq = [random.triangular(0, (100 // (idx + 1))) for idx in range(0, 10)]
+print("{:.2f}".format((random.random() * random.choice(seq)) + 1))
