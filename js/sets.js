@@ -16,3 +16,9 @@ console.log(union); // Set(4) {1, 2, 3, 4}
 console.log(intersection); // Set(4) {1, 2, 3, 4}
 console.log(difference); // Set(4) {1, 2, 3, 4}
 console.log(isSuperset(union, a)); // Set(4) {1, 2, 3, 4}
+
+const ba = new Set()
+ba.add([17, 5])
+ba.add([5, 17])
+ba.add([5, 7])
+console.log(ba)

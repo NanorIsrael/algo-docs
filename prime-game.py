@@ -181,8 +181,8 @@ def isPrime(num):
 
 
 
-# for i in range(40):
-# 	print('{} is {}'.format(i, isPrime(i)))
+for i in range(18):
+	print('{} is {}'.format(i, isPrime(i)))
 import random
 
 

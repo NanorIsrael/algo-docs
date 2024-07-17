@@ -10,3 +10,5 @@ https://www.freecodecamp.org/news/acid-databases-explained/
 
 
 https://blog.vikrantbhat.com/dont-lose-your-github-contributions-when-you-leave-an-organization?source=newsletter
+<!-- security -->
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
