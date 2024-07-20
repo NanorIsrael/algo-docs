@@ -10,17 +10,18 @@ const person = {
 rl.question("what is your name:\n", (answer) => {
 	// console.log(answer)
 	person.name = answer
-	fs.writeFileSync(`${answer}.md`, `${answer}\n ============================ \n\n`)
+	const writeStream = fs.createWriteStream(`${answer}.md`)
+	writeStream.write(`${answer}\n ============================ \n\n`)
 	rl.setPrompt(`What would ${answer} say?\n`)
 	rl.prompt()
 
 	rl.on('line', (saying) => {
-		person.sayings.push(saying)
-		fs.appendFile(`${person.name}.md`, `* ${saying.trim()}\n`, () => null)
-
 		if (saying.toLowerCase() === 'exit') {
+			writeStream.close()
 			rl.close()
 		} else {
+			person.sayings.push(saying)
+			writeStream.write(`* ${saying.trim()}\n`, () => null)	
 			rl.setPrompt(`What else would ${person.name} say? ('exit' to leave)\n`)
 			rl.prompt()
 		}

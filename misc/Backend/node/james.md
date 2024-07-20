@@ -2,5 +2,4 @@ james
  ============================ 
 
 * hello
-* world
-* exit
+* Israel
