@@ -16,3 +16,6 @@ https://flask-cors.readthedocs.io/en/latest/
 
 <!-- test -->
 https://pypi.org/project/parameterized/
+
+<!-- availability -->
+https://github.com/danluu/post-mortems

@@ -103,4 +103,31 @@ function  bubbleSort(myarr=[1,8, 4, 5,2,6,3,7]){
 }
 
 const myarr=[1,8, 4, 5,2,6,3,7]
-console.log(myarr.with(0,21))
+// console.log(myarr.with(0,21))
+
+const questions = [{id: 1, text: "Free"}, {id: 2, text: "who Free bag are you "}, {id: 3, text: "free bag"}]
+
+
+console.log(questions.map((obj) => obj.text.toLowerCase().search(/^(free bag)/)))
+console.log(questions.map((obj) => obj.text.match(/^(free bag)/i)))
+console.log(questions.map((obj) => obj.text.toLowerCase().includes('free')))
+
+
+function is_match(s, p) {
+	if (!p){
+		return false
+	}
+		
+	const first_match = Boolean(s) && (s[0] == p[0] || p[0] == '.')
+	if (p.length  >= 2 && p[1] === '*') {
+		const case1 = is_match(s, p[p.slice(2)])
+		const case2 = first_match && is_match(s[s.slice(1)], p)
+		return case1 || case2
+	}
+		
+	return first_match && is_match(s[s.slice(1)], p[p.slice(1)])
+}
+console.log(is_match("aa", "a"))     
+console.log(is_match("aa", "a*"))    
+console.log(is_match("ab", ".*"))    
+console.log(is_match("aab", "c*a*b"))

@@ -44,3 +44,7 @@ https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
 
 <!-- code challlenges -->
 https://edabit.com/challenges
+
+
+<!-- search input -->
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search
