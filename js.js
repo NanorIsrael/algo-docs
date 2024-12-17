@@ -127,7 +127,32 @@ function is_match(s, p) {
 		
 	return first_match && is_match(s[s.slice(1)], p[p.slice(1)])
 }
-console.log(is_match("aa", "a"))     
-console.log(is_match("aa", "a*"))    
-console.log(is_match("ab", ".*"))    
-console.log(is_match("aab", "c*a*b"))
+// console.log(is_match("aa", "a"))     
+// console.log(is_match("aa", "a*"))    
+// console.log(is_match("ab", ".*"))    
+// console.log(is_match("aab", "c*a*b"))
+
+
+const s1 = 'namelesss'
+const s2 = 'salesmen'
+
+function sol(s1, s2) {
+	if (s1.length != s2.length) {
+		return false;
+	}
+	const sortedS1 = s1.replace('\s+\g', '')
+	const sortedS2 = s2.replace('\s+\g', '')
+
+	const charCount = {}
+	for (let char of sortedS1) {
+		charCount[char] = (charCount[char] || 0) + 1
+	}
+
+	for (let char of sortedS2) {
+		if (!charCount[char]) return false
+		charCount[char] --
+	}
+	return true
+
+}
+console.log(sol(s1, s2))

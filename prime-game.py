@@ -171,7 +171,6 @@ def isPrime(num):
         return False
     i = 5
     while i * i <= num:
-        print('got here')
         if  num % i == 0 or num % (i + 2)== 0:
             return False
         i += 6
